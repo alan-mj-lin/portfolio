@@ -24,19 +24,33 @@
     .mobileSlides {
       display: none;
     }
+    .centerImage {
+      text-align: center;
+      display: block;
+    }
+    .avatar {
+      vertical-align: middle;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
   </style>
-  <body class="is-preload">
+  <body>
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
       <!-- Intro -->
       <div id="intro">
+        <img src="images/avatar.jpg" alt="Avatar" class="avatar" />
+        <br />
         <h1>Alan Lin</h1>
-        <p>I am a passionate Software Developer.</p>
+        <p>
+          I am a self-taught Software Developer with some experience as a
+          Quality Engineer, having a great passion for new technologies. Most of
+          my work dabbles in Python Flask, React, and NodeJS.
+        </p>
         <ul class="actions">
           <li>
-            <a
-              href="#header"
-              class="button icon solid solo fa-arrow-down scrolly"
+            <a href="#nav" class="button icon solid solo fa-arrow-down scrolly"
               >Continue</a
             >
           </li>
@@ -51,29 +65,8 @@
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li class="active"><a href="index.html">Sheeves</a></li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
+          <li class="active"><a href="index.html#nav">Sheeves</a></li>
+          <li class="active"><a href="generic.html#nav">Mafia</a></li>
         </ul>
       </nav>
 
@@ -89,15 +82,26 @@
               upcoming duties at church.
             </p>
           </header>
-          <a class="image main">
-            <img class="mySlides" src="images/SheevesHome.JPG" alt="" />
-            <img class="mySlides" src="images/SheevesTemplates.JPG" alt="" />
-            <img class="mySlides" src="images/SheevesTeams.JPG" alt="" />
-            <img class="mySlides" src="images/SheevesWorkers.JPG" alt="" />
+          <center>
+            <img
+              class="mySlides centerImage"
+              src="images/SheevesMobileDashboard.png"
+              alt=""
+            />
+            <img
+              class="mySlides centerImage"
+              src="images/SheevesMobileSchedule1.png"
+              alt=""
+            />
+            <img
+              class="mySlides centerImage"
+              src="images/SheevesMobileSchedule2.png"
+              alt=""
+            />
             <br />
             <button onclick="plusDivs(-1)">&#10094;</button>
             <button onclick="plusDivs(1)">&#10095;</button>
-          </a>
+          </center>
         </article>
         <article class="post featured">
           <header class="major">
@@ -109,15 +113,36 @@
               PostGreSQL server.
             </p>
           </header>
-          <a class="image main">
-            <img class="mobileSlides" src="images/SheevesHome.JPG" alt="" />
+          <a class="image">
+            <img
+              class="mobileSlides"
+              src="images/SheevesHome.JPG"
+              alt=""
+              srcset="images/SheevesHome.JPG 3000w"
+              sizes="(max-width: 1500px) 1000px"
+            />
             <img
               class="mobileSlides"
               src="images/SheevesTemplates.JPG"
               alt=""
+              srcset="images/SheevesTemplates.JPG 3000w"
+              sizes="(max-width: 1500px) 1000px"
             />
-            <img class="mobileSlides" src="images/SheevesTeams.JPG" alt="" />
-            <img class="mobileSlides" src="images/SheevesWorkers.JPG" alt="" />
+            <img
+              class="mobileSlides"
+              src="images/SheevesTeams.JPG"
+              alt=""
+              srcset="images/SheevesTeams.JPG 3000w"
+              sizes="(max-width: 1500px) 1000px"
+            />
+            <img
+              class="mobileSlides"
+              src="images/SheevesWorkers.JPG"
+              alt=""
+              srcset="images/SheevesWorkers.JPG 3000w"
+              sizes="(max-width: 1500px) 1000px"
+            />
+
             <br />
             <button onclick="plusMobileDivs(-1)">&#10094;</button>
             <button onclick="plusMobileDivs(1)">&#10095;</button>
@@ -313,12 +338,12 @@
       </footer>
 
       <!-- Copyright -->
-      <div id="copyright">
+      <!-- <div id="copyright">
         <ul>
           <li>&copy; Untitled</li>
           <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <!-- Scripts -->
