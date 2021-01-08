@@ -64,9 +64,9 @@
 				$window
 					.on('scroll._parallax', function() {
 
-						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
+						// var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
 
-						$bg.css('transform', 'matrix(1,0,0,1,0,' + (pos * intensity) + ')');
+						// $bg.css('transform', 'matrix(1,0,0,1,0,' + (pos * intensity) + ')');
 
 					});
 
